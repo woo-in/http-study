@@ -10,8 +10,6 @@
 - 이응준, 정상일 옮김 · 인사이트 · 2014년 12월 15일
 - 원서: *HTTP: The Definitive Guide* (O'Reilly, 2002)
 
-
-
 ## ✅ Study Rule
 
 ### 1. 진행 주기
@@ -24,12 +22,10 @@
 
 **② 발표 전날 23:59까지**
 - 발표자: 담당 소챕터의 발표 자료를 PR로 업로드
-- 전원: 소챕터마다 기술 질문 1개 + 모범답안 1개를 준비해 PR로 업로드
 
 **③ 발표 당일**
 - 발표자가 담당 소챕터를 발표
-- 준비된 질문 중 하나를 뽑아, 답변자를 랜덤으로 지정해 답변
-- 답변이 끝나면 출제자가 모범답안을 공개하고 비교
+- 발표가 끝나면 자유롭게 질의응답
 
 ---
 
@@ -187,12 +183,9 @@
 ├── README.md
 ├── week01-overview-url/
 │   ├── README.md              # 발표자 배정표 (전주 세션에서 확정)
-│   ├── slides/                # 발표 자료 — 발표 전날 23:59까지
-│   │   ├── 1-1_jwi.pdf
-│   │   └── 1-3_abc.pdf
-│   └── questions/             # 질문 - 모범답안 (팀원별 1개)
-│       ├── jwi.md
-│       └── abc.md
+│   └── slides/                # 발표 자료 — 발표 전날 23:59까지
+│       ├── 1-1_jwi.pdf
+│       └── 1-3_abc.pdf
 ├── week02-http-message/
 ├── week03-connection-tcp/
 ├── week04-connection-http2/
@@ -204,58 +197,9 @@
 └── week10-https-security/
 ```
 
-
-### 질문 파일 양식 — `questions/jwi.md`
-
-````markdown
-# Week 3 — 질문 / 모범답안 (정우인)
-
-## 3-1. TCP 커넥션의 기본
-
-**Q.** ...
-
-<details><summary>모범답안</summary>
-
-...
-
-</details>
-
-## 3-2. HTTP 트랜잭션 지연의 구성
-
-**Q.** ...
-
-<details><summary>모범답안</summary>
-
-...
-
-</details>
-
-## 3-3. Nagle, TCP_NODELAY, TIME_WAIT
-
-**Q.** 작은 요청이 간헐적으로 수백 ms씩 지연된다면 TCP 레벨에서 무엇을 의심해볼 수 있나요?
-
-<details><summary>모범답안</summary>
-
-...
-
-</details>
-
-## 3-4. HTTP 커넥션 관리와 병렬 커넥션
-
-**Q.** ...
-
-<details><summary>모범답안</summary>
-
-...
-
-</details>
-````
-
 ---
 
 ## 🌱 브랜치 / PR 컨벤션
-
-
 
 - 브랜치: `week01/jwi`
 - 커밋: `[week01] jwi`
